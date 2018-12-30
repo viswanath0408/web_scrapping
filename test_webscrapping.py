@@ -20,7 +20,6 @@ url = "https://cincinnati.craigslist.org/search/cto"
 # opening the connectionn
 uClient = uReq(url)
 page_html = uClient.read()
-print ("type is " +str(type(page_html)))
 
 # page_soup = bsoup(page_html, 'html.parser')
 page_soup = bsoup(page_html, 'lxml')
